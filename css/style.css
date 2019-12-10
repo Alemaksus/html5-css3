@@ -246,43 +246,43 @@ video {
     
 }
 .review-item {
-  width: 400px;
+  width: 573px;
+  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-circle {
+  width: 75px;
+  height: 75px;
+  margin: 0 17px 0 0;
+  background-color: #445161;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.review-item-txt {
+  width: 470px;
   padding: 10px;
-  margin: 30px;
+  margin: 0;
   box-sizing: border-box;
   background-color: #ebebeb;
   border-radius: 10px;
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  font-style: italic;
+  line-height: 20px;
+  color: #445161;
 }
 
-.review-item:before {
+.review-item-txt:before {
   content: "";
   position: absolute;
   top: 35px;
   left: -30px;
   border: 15px solid transparent;
-  border-right: 15px solid #ccc;
-}
-.review-cicle {
-   width: 100px;
-    height: 100px;
-    background: blue;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-}
-.review-circle:before {
-  
-  
-}
-
-.review-item-txt {
-  margin: 0;
-  font-style: italic;
-  line-height: 20px;
-  color: #616161;
+  border-right: 15px solid #ebebeb;
 }
 
 .review-item-author {
@@ -522,8 +522,27 @@ textarea[placeholder] {
 .main-footer_contacts {
     width: 240px;
     height: 300px;
-    background-color: /*#445162*/white;
+    background-color: #445162;
 }
+
+.footer_contacts {
+    background-color: #445162;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: none;
+}
+
+.footer_contacts.li.first-child:before {
+    
+    background: url (/img/skype_icon.png);
+    width: 24px;
+    height: 26px;
+    background-color: #ffffff;
+        
+}
+
 
 /* =======Footer======== */
 .copyright {
